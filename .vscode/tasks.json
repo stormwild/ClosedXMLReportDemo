@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        // Replace with the path to your .csproj file
+        "${workspaceFolder}/src/ClosedXMLReportDemo.Api/ClosedXMLReportDemo.Api.csproj"
+        // Add any additional build arguments you need
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
