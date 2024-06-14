@@ -6,4 +6,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Modules\BooksModule\BooksList\" />
+    <Folder Include="Modules\BooksModule\BooksReport\" />
+    <!-- The files are not served directory and do not qualify as Content  -->
+    <None Update="Templates\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML.Report" />
+  </ItemGroup>
+
 </Project>
