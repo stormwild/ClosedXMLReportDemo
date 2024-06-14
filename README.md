@@ -22,7 +22,7 @@ In the Template/Book.xlsx file, we have a sheet named "Books" with the following
 |-------------|----------------|
 | {{item.Id}} | {{item.Title}} |
 
-In Formulas > Name Manager, we have defined a named range called "BookList" which refers to the range: `=Books!$A$2:B3`
+In Formulas > Name Manager, we have defined a named range called "BookList" which refers to the range: `=Books!$A$2:B$3`
 
 Our list of books is mapped to the named range "BookList" in the template.
 
