@@ -17,6 +17,8 @@
 
   <ItemGroup>
     <PackageReference Include="ClosedXML.Report" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 
 </Project>

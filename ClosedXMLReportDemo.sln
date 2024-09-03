@@ -7,19 +7,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C1467C73-344
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClosedXMLReportDemo.Api", "src\ClosedXMLReportDemo.Api\ClosedXMLReportDemo.Api.csproj", "{6AD7851B-5E3B-4879-B844-E37BBB19E1EE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34226977-F15B-4F16-91A5-77EAE621FEB2}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		nuget.config = nuget.config
+		README.md = README.md
+		.gitignore = .gitignore
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6AD7851B-5E3B-4879-B844-E37BBB19E1EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6AD7851B-5E3B-4879-B844-E37BBB19E1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AD7851B-5E3B-4879-B844-E37BBB19E1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AD7851B-5E3B-4879-B844-E37BBB19E1EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6AD7851B-5E3B-4879-B844-E37BBB19E1EE} = {C1467C73-3448-472A-8A55-FB0C04841BF3}

@@ -7,7 +7,8 @@ public static class WebApplicationExtensions
 {
     public static void MapModules(this WebApplication app)
     {
-        app.MapBooksList();
-        app.MapBooksReport();
+        app.MapGroup("/api")
+            .MapBooksList()
+            .MapBooksReport();
     }
 }

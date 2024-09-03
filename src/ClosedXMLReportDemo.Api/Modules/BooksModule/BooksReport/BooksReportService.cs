@@ -16,7 +16,7 @@ internal class BooksReportService : IBooksReportService
     {
         var books = await _booksListService.GetBooksListAsync();
 
-        var template = new XLTemplate(@"Templates\Books.xlsx");
+        using var template = new XLTemplate(@"Templates\Books.xlsx");
         template.AddVariable("BookList", books);
         template.Generate();
 

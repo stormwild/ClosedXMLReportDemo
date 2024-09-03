@@ -7,9 +7,16 @@ public static class BooksReport
         services.AddScoped<IBooksReportService, BooksReportService>();
     }
 
-    public static void MapBooksReport(this WebApplication app)
+    public static RouteGroupBuilder MapBooksReport(this RouteGroupBuilder app)
     {
-        app.MapGet("/books/report", HandleAsync);
+        app.MapGet("/books/report", HandleAsync)
+           .WithOpenApi(operation => new(operation)
+           {
+               Summary = "BooksReport",
+               Tags = [new() { Name = "BooksReport" }]
+           });
+
+        return app;
     }
 
     private static async Task<IResult> HandleAsync(IBooksReportService booksReportService)
