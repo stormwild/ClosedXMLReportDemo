@@ -10,11 +10,11 @@ public static class BooksList
     public static RouteGroupBuilder MapBooksList(this RouteGroupBuilder app)
     {
         app.MapGet("/books", HandleAsync)
-        .WithOpenApi(operation => new(operation)
-        {
-            Summary = "BooksList",
-            Tags = [new() { Name = "BooksList" }]
-        });
+           .WithOpenApi(operation => new(operation)
+           {
+               Summary = "BooksList",
+               Tags = [new() { Name = "BooksList" }]
+           });
 
         return app;
     }

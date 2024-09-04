@@ -12,6 +12,7 @@ internal class BooksReportService : IBooksReportService
     {
         _booksListService = booksListService;
     }
+
     public async Task<byte[]> GetBooksReportAsync()
     {
         var books = await _booksListService.GetBooksListAsync();
