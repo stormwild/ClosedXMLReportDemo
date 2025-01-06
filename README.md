@@ -14,6 +14,10 @@ This is a simple demo to show how to use ClosedXML.Report to generate Excel file
 
 [ClosedXML.Report | Documentation for ClosedXML.Report](https://closedxml.io/ClosedXML.Report/)
 
+## Excel Formula Samples
+
+For examples of using basic Excel formulas with ClosedXML, see the [Excel Formula Samples documentation](src/ExcelFormulaSamples/README.md).
+
 ## Steps
 
 In the Template/Book.xlsx file, we have a sheet named "Books" with the following content:
