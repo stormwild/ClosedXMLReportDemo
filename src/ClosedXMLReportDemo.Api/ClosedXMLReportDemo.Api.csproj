@@ -21,4 +21,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="ReportDemo.Api.Tests" />
+  </ItemGroup>
+
 </Project>
